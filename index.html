@@ -1,702 +1,807 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
-    <meta charset="UTF-8">
 
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="UTF-8">
 
-    <title>Мастер Мурино — ремонт бытовой техники и мастер на час</title>
+<meta name="viewport"
+      content="width=device-width, initial-scale=1.0">
 
-    <meta name="description"
-          content="Ремонт бытовой техники, мастер на час, электрика и сантехника в Мурино. Выезд мастера. Оставьте заявку онлайн.">
+<title>Мастер Мурино — ремонт бытовой техники и мастер на час</title>
 
-    <meta name="keywords"
-          content="ремонт бытовой техники Мурино, мастер на час Мурино, электрик Мурино, сантехник Мурино">
+<meta name="description"
+      content="Ремонт бытовой техники, мастер на час, электрика и сантехника в Мурино. Выезд мастера. Оставьте заявку онлайн.">
 
-    <!-- =====================================================
-         ЯНДЕКС МЕТРИКА
-         ===================================================== -->
+<meta name="keywords"
+      content="ремонт бытовой техники Мурино, мастер на час Мурино, электрик Мурино, сантехник Мурино">
 
-    <script type="text/javascript">
-        (function(m,e,t,r,i,k,a){
-            m[i]=m[i]||function(){
-                (m[i].a=m[i].a||[]).push(arguments)
-            };
 
-            m[i].l=1*new Date();
+<!-- ======================================================
+     ЯНДЕКС МЕТРИКА
+====================================================== -->
 
-            for (var j=0;j<document.scripts.length;j++){
-                if (document.scripts[j].src === r) {
-                    return;
-                }
-            }
+<script type="text/javascript">
 
-            k=e.createElement(t),
-            a=e.getElementsByTagName(t)[0];
+(function(m,e,t,r,i,k,a){
 
-            k.async=1;
-            k.src=r;
+    m[i]=m[i]||function(){
 
-            a.parentNode.insertBefore(k,a)
-        })(
-            window,
-            document,
-            'script',
-            'https://mc.yandex.ru/metrika/tag.js?id=111532341',
-            'ym'
+        (m[i].a=m[i].a||[]).push(arguments)
+
+    };
+
+    m[i].l=1*new Date();
+
+    for(
+        var j=0;
+        j<document.scripts.length;
+        j++
+    ){
+
+        if(document.scripts[j].src===r){
+            return;
+        }
+
+    }
+
+    k=e.createElement(t);
+
+    a=e.getElementsByTagName(t)[0];
+
+    k.async=1;
+
+    k.src=r;
+
+    a.parentNode.insertBefore(k,a);
+
+})(
+    window,
+    document,
+    'script',
+    'https://mc.yandex.ru/metrika/tag.js?id=111532341',
+    'ym'
+);
+
+
+ym(
+    111532341,
+    'init',
+    {
+        ssr:true,
+        webvisor:true,
+        clickmap:true,
+        ecommerce:"dataLayer",
+        referrer:document.referrer,
+        url:location.href,
+        accurateTrackBounce:true,
+        trackLinks:true
+    }
+);
+
+</script>
+
+
+<noscript>
+
+<div>
+
+<img
+    src="https://mc.yandex.ru/watch/111532341"
+    style="position:absolute;left:-9999px;"
+    alt=""
+>
+
+</div>
+
+</noscript>
+
+
+<!-- ======================================================
+     СТИЛИ
+====================================================== -->
+
+<style>
+
+*{
+    box-sizing:border-box;
+    margin:0;
+    padding:0;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+
+    font-family:
+        Arial,
+        Helvetica,
+        sans-serif;
+
+    color:#172033;
+
+    background:#ffffff;
+
+    line-height:1.5;
+}
+
+a{
+
+    text-decoration:none;
+
+    color:inherit;
+}
+
+.container{
+
+    width:min(1120px,92%);
+
+    margin:0 auto;
+}
+
+
+/* ======================================================
+   HEADER
+====================================================== */
+
+header{
+
+    position:sticky;
+
+    top:0;
+
+    z-index:1000;
+
+    background:rgba(255,255,255,.95);
+
+    border-bottom:1px solid #e8edf5;
+
+    backdrop-filter:blur(12px);
+}
+
+.header-inner{
+
+    min-height:70px;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:space-between;
+
+    gap:20px;
+}
+
+.logo{
+
+    font-size:22px;
+
+    font-weight:800;
+
+    color:#172033;
+}
+
+.logo span{
+
+    display:block;
+
+    font-size:12px;
+
+    font-weight:400;
+
+    color:#718096;
+}
+
+.header-phone{
+
+    font-weight:700;
+
+    color:#334155;
+}
+
+.header-button{
+
+    background:#2563eb;
+
+    color:white;
+
+    padding:12px 18px;
+
+    border-radius:11px;
+
+    font-weight:700;
+
+    box-shadow:
+        0 8px 20px rgba(37,99,235,.2);
+}
+
+
+/* ======================================================
+   HERO
+====================================================== */
+
+.hero{
+
+    padding:85px 0 75px;
+
+    background:
+
+        radial-gradient(
+            circle at 85% 15%,
+            rgba(37,99,235,.13),
+            transparent 30%
+        ),
+
+        linear-gradient(
+            135deg,
+            #f5f9ff 0%,
+            #ffffff 70%
+        );
+}
+
+.hero-grid{
+
+    display:grid;
+
+    grid-template-columns:
+        1.2fr
+        .8fr;
+
+    gap:50px;
+
+    align-items:center;
+}
+
+.badge{
+
+    display:inline-block;
+
+    padding:8px 13px;
+
+    background:#e7f0ff;
+
+    color:#1d4ed8;
+
+    border-radius:30px;
+
+    font-size:14px;
+
+    font-weight:700;
+
+    margin-bottom:20px;
+}
+
+.hero h1{
+
+    font-size:
+        clamp(36px,6vw,62px);
+
+    line-height:1.05;
+
+    margin-bottom:24px;
+
+    color:#111827;
+}
+
+.hero h1 span{
+
+    display:block;
+
+    color:#2563eb;
+}
+
+.hero-text{
+
+    font-size:20px;
+
+    color:#64748b;
+
+    max-width:650px;
+
+    margin-bottom:30px;
+}
+
+.buttons{
+
+    display:flex;
+
+    flex-wrap:wrap;
+
+    gap:12px;
+}
+
+.btn{
+
+    display:inline-flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    min-height:52px;
+
+    padding:0 22px;
+
+    border-radius:12px;
+
+    font-weight:700;
+
+    transition:
+        transform .2s,
+        box-shadow .2s;
+}
+
+.btn:hover{
+
+    transform:translateY(-2px);
+
+}
+
+.btn-primary{
+
+    background:#2563eb;
+
+    color:white;
+
+    box-shadow:
+        0 10px 25px rgba(37,99,235,.22);
+}
+
+.btn-secondary{
+
+    background:#eaf0f7;
+
+    color:#172033;
+}
+
+.hero-card{
+
+    background:white;
+
+    border:1px solid #e1e8f0;
+
+    border-radius:24px;
+
+    padding:30px;
+
+    box-shadow:
+        0 25px 70px rgba(30,64,175,.10);
+}
+
+.hero-card h3{
+
+    font-size:23px;
+
+    margin-bottom:20px;
+}
+
+.hero-list{
+
+    list-style:none;
+}
+
+.hero-list li{
+
+    padding:12px 0;
+
+    border-bottom:
+        1px solid #edf1f6;
+}
+
+.hero-list li:last-child{
+
+    border-bottom:none;
+}
+
+
+/* ======================================================
+   SECTIONS
+====================================================== */
+
+section{
+
+    padding:75px 0;
+}
+
+.section-title{
+
+    font-size:
+        clamp(30px,5vw,44px);
+
+    margin-bottom:14px;
+
+    color:#172033;
+}
+
+.section-subtitle{
+
+    color:#64748b;
+
+    font-size:18px;
+
+    max-width:700px;
+
+    margin-bottom:40px;
+}
+
+
+/* ======================================================
+   SERVICES
+====================================================== */
+
+.services-grid{
+
+    display:grid;
+
+    grid-template-columns:
+        repeat(3,1fr);
+
+    gap:18px;
+}
+
+.service{
+
+    padding:26px;
+
+    border:1px solid #e3eaf3;
+
+    border-radius:18px;
+
+    background:white;
+
+    transition:
+        transform .2s,
+        box-shadow .2s,
+        border-color .2s;
+}
+
+.service:hover{
+
+    transform:translateY(-4px);
+
+    border-color:#bfd3f8;
+
+    box-shadow:
+        0 18px 45px rgba(30,64,175,.10);
+}
+
+.service-icon{
+
+    font-size:35px;
+
+    margin-bottom:15px;
+}
+
+.service h3{
+
+    font-size:21px;
+
+    margin-bottom:9px;
+}
+
+.service p{
+
+    color:#64748b;
+}
+
+
+/* ======================================================
+   ADVANTAGES
+====================================================== */
+
+.advantages{
+
+    background:#f4f8fd;
+}
+
+.advantages-grid{
+
+    display:grid;
+
+    grid-template-columns:
+        repeat(4,1fr);
+
+    gap:20px;
+}
+
+.advantage{
+
+    background:white;
+
+    padding:25px;
+
+    border-radius:18px;
+
+    border:1px solid #e1e8f0;
+}
+
+.advantage strong{
+
+    display:block;
+
+    font-size:20px;
+
+    margin-bottom:8px;
+}
+
+.advantage p{
+
+    color:#64748b;
+}
+
+
+/* ======================================================
+   STEPS
+====================================================== */
+
+.steps{
+
+    display:grid;
+
+    grid-template-columns:
+        repeat(4,1fr);
+
+    gap:20px;
+}
+
+.step{
+
+    padding:25px;
+
+    border:1px solid #e1e8f0;
+
+    border-radius:18px;
+
+    background:white;
+}
+
+.step-number{
+
+    font-size:14px;
+
+    font-weight:800;
+
+    color:#2563eb;
+
+    margin-bottom:15px;
+}
+
+.step h3{
+
+    margin-bottom:8px;
+}
+
+.step p{
+
+    color:#64748b;
+}
+
+
+/* ======================================================
+   CTA
+====================================================== */
+
+.cta{
+
+    background:
+
+        linear-gradient(
+            135deg,
+            #172554,
+            #2563eb
         );
 
-        ym(111532341, 'init', {
-            ssr: true,
-            webvisor: true,
-            clickmap: true,
-            ecommerce: "dataLayer",
-            referrer: document.referrer,
-            url: location.href,
-            accurateTrackBounce: true,
-            trackLinks: true
-        });
-    </script>
-
-    <noscript>
-        <div>
-            <img src="https://mc.yandex.ru/watch/111532341"
-                 style="position:absolute;left:-9999px;"
-                 alt="">
-        </div>
-    </noscript>
-
-    <!-- =====================================================
-         СТИЛИ
-         ===================================================== -->
-
-    <style>
-
-        * {
-            box-sizing: border-box;
-            margin: 0;
-            padding: 0;
-        }
-
-        html {
-            scroll-behavior: smooth;
-        }
-
-        body {
-            font-family: Arial, Helvetica, sans-serif;
-            color: #172033;
-            background: #ffffff;
-            line-height: 1.5;
-        }
-
-        a {
-            text-decoration: none;
-            color: inherit;
-        }
-
-        .container {
-            width: min(1120px, 92%);
-            margin: 0 auto;
-        }
-
-        /* =================================================
-           HEADER
-           ================================================= */
-
-        header {
-            position: sticky;
-            top: 0;
-            z-index: 1000;
-
-            background: rgba(255,255,255,0.94);
-
-            border-bottom: 1px solid #e6eaf2;
-
-            backdrop-filter: blur(12px);
-        }
+    color:white;
 
-        .header-inner {
-            min-height: 72px;
+    border-radius:28px;
 
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
+    padding:55px;
 
-            gap: 20px;
-        }
+    text-align:center;
 
-        .logo {
-            font-size: 22px;
-            font-weight: 800;
-            color: #172033;
-        }
+    box-shadow:
+        0 25px 70px rgba(37,99,235,.20);
+}
 
-        .logo span {
-            display: block;
+.cta h2{
 
-            font-size: 12px;
-            font-weight: 400;
+    font-size:
+        clamp(30px,5vw,48px);
 
-            color: #697386;
-        }
+    margin-bottom:15px;
+}
 
-        .header-phone {
-            font-weight: 700;
-            color: #334155;
-        }
+.cta p{
 
-        .header-button {
-            background: linear-gradient(135deg, #2563eb, #7c3aed);
-            color: white;
+    color:#dbeafe;
 
-            padding: 12px 20px;
+    font-size:18px;
 
-            border-radius: 11px;
+    margin-bottom:28px;
+}
 
-            font-weight: 700;
+.cta .btn-primary{
 
-            box-shadow: 0 8px 22px rgba(37,99,235,.20);
-        }
+    background:white;
 
-        /* =================================================
-           HERO
-           ================================================= */
+    color:#1d4ed8;
 
-        .hero {
-            padding: 85px 0 75px;
+    box-shadow:none;
+}
 
-            background:
-                radial-gradient(
-                    circle at 10% 20%,
-                    rgba(37,99,235,.12),
-                    transparent 35%
-                ),
-                radial-gradient(
-                    circle at 90% 80%,
-                    rgba(124,58,237,.12),
-                    transparent 35%
-                ),
-                linear-gradient(
-                    135deg,
-                    #f7faff 0%,
-                    #ffffff 100%
-                );
-        }
 
-        .hero-grid {
-            display: grid;
+/* ======================================================
+   CONTACTS
+====================================================== */
 
-            grid-template-columns: 1.2fr 0.8fr;
+.contacts{
 
-            gap: 50px;
+    display:grid;
 
-            align-items: center;
-        }
+    grid-template-columns:
+        1fr 1fr;
 
-        .badge {
-            display: inline-block;
+    gap:30px;
+}
 
-            padding: 8px 14px;
+.contact-card{
 
-            background: #e8f0ff;
+    padding:30px;
 
-            color: #2457c5;
+    border:1px solid #e1e8f0;
 
-            border-radius: 30px;
+    border-radius:20px;
 
-            font-size: 14px;
-            font-weight: 700;
+    background:white;
+}
 
-            margin-bottom: 20px;
-        }
+.contact-card h3{
 
-        .hero h1 {
-            font-size: clamp(36px, 6vw, 62px);
+    margin-bottom:15px;
+}
 
-            line-height: 1.05;
+.contact-card p{
 
-            margin-bottom: 24px;
+    color:#64748b;
 
-            letter-spacing: -1.5px;
-        }
+    margin-bottom:12px;
+}
 
-        .hero h1 span {
-            display: block;
+.contact-phone{
 
-            background: linear-gradient(
-                90deg,
-                #2563eb,
-                #7c3aed
-            );
+    font-size:25px;
 
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-        }
+    font-weight:800;
 
-        .hero-text {
-            font-size: 20px;
+    display:inline-block;
 
-            color: #596579;
+    margin-top:10px;
 
-            max-width: 650px;
+    color:#2563eb;
+}
 
-            margin-bottom: 30px;
-        }
 
-        .buttons {
-            display: flex;
+/* ======================================================
+   FOOTER
+====================================================== */
 
-            flex-wrap: wrap;
+footer{
 
-            gap: 12px;
-        }
+    padding:35px 0;
 
-        .btn {
-            display: inline-flex;
+    border-top:1px solid #e8edf5;
 
-            align-items: center;
-            justify-content: center;
+    color:#718096;
 
-            min-height: 52px;
+    font-size:14px;
+}
 
-            padding: 0 22px;
+.footer-inner{
 
-            border-radius: 12px;
+    display:flex;
 
-            font-weight: 700;
+    justify-content:space-between;
 
-            transition:
-                transform .2s,
-                opacity .2s,
-                box-shadow .2s;
-        }
+    gap:20px;
 
-        .btn:hover {
-            transform: translateY(-2px);
-            opacity: .94;
-        }
+    flex-wrap:wrap;
+}
 
-        .btn-primary {
-            background: linear-gradient(
-                135deg,
-                #2563eb,
-                #7c3aed
-            );
 
-            color: white;
+/* ======================================================
+   MOBILE
+====================================================== */
 
-            box-shadow:
-                0 10px 28px rgba(37,99,235,.22);
-        }
+@media(max-width:850px){
 
-        .btn-secondary {
-            background: #eef2f7;
-            color: #172033;
-        }
+    .hero-grid{
 
-        .hero-card {
-            background:
-                linear-gradient(
-                    145deg,
-                    #ffffff,
-                    #f5f7ff
-                );
+        grid-template-columns:1fr;
+    }
 
-            border: 1px solid #e1e7f2;
+    .services-grid{
 
-            border-radius: 24px;
+        grid-template-columns:
+            1fr 1fr;
+    }
 
-            padding: 30px;
+    .advantages-grid{
 
-            box-shadow:
-                0 20px 60px rgba(31,41,55,.10);
-        }
+        grid-template-columns:
+            1fr 1fr;
+    }
 
-        .hero-card h3 {
-            font-size: 23px;
+    .steps{
 
-            margin-bottom: 20px;
-        }
+        grid-template-columns:
+            1fr 1fr;
+    }
 
-        .hero-list {
-            list-style: none;
-        }
+    .contacts{
 
-        .hero-list li {
-            padding: 13px 0;
+        grid-template-columns:1fr;
+    }
 
-            border-bottom:
-                1px solid #e6eaf2;
-        }
+    .header-phone{
 
-        .hero-list li:last-child {
-            border-bottom: none;
-        }
+        display:none;
+    }
 
-        /* =================================================
-           SECTIONS
-           ================================================= */
+}
 
-        section {
-            padding: 75px 0;
-        }
+@media(max-width:600px){
 
-        .section-title {
-            font-size: clamp(30px, 5vw, 44px);
+    .hero{
 
-            margin-bottom: 14px;
+        padding:55px 0;
+    }
 
-            color: #172033;
-        }
+    section{
 
-        .section-subtitle {
-            color: #697386;
+        padding:55px 0;
+    }
 
-            font-size: 18px;
+    .services-grid,
+    .advantages-grid,
+    .steps{
 
-            max-width: 700px;
+        grid-template-columns:1fr;
+    }
 
-            margin-bottom: 40px;
-        }
+    .header-button{
 
-        /* =================================================
-           SERVICES
-           ================================================= */
+        padding:10px 13px;
 
-        .services-grid {
-            display: grid;
+        font-size:14px;
+    }
 
-            grid-template-columns:
-                repeat(3, 1fr);
+    .logo{
 
-            gap: 18px;
-        }
+        font-size:19px;
+    }
 
-        .service {
-            padding: 26px;
+    .hero-card{
 
-            border: 1px solid #e3e8f1;
+        padding:22px;
+    }
 
-            border-radius: 18px;
+    .cta{
 
-            background: #ffffff;
+        padding:35px 20px;
 
-            transition:
-                transform .2s,
-                box-shadow .2s,
-                border-color .2s;
-        }
+        border-radius:20px;
+    }
 
-        .service:hover {
-            transform: translateY(-4px);
+    .btn{
 
-            border-color: #b9c9ed;
+        width:100%;
+    }
 
-            box-shadow:
-                0 15px 40px rgba(37,99,235,.09);
-        }
+}
 
-        .service-icon {
-            font-size: 35px;
-
-            margin-bottom: 15px;
-        }
-
-        .service h3 {
-            font-size: 21px;
-
-            margin-bottom: 9px;
-        }
-
-        .service p {
-            color: #697386;
-        }
-
-        /* =================================================
-           ADVANTAGES
-           ================================================= */
-
-        .advantages {
-            background:
-                linear-gradient(
-                    135deg,
-                    #f5f8ff,
-                    #faf7ff
-                );
-        }
-
-        .advantages-grid {
-            display: grid;
-
-            grid-template-columns:
-                repeat(4, 1fr);
-
-            gap: 20px;
-        }
-
-        .advantage {
-            background: white;
-
-            padding: 25px;
-
-            border-radius: 18px;
-
-            border: 1px solid #e1e7f2;
-
-            box-shadow:
-                0 8px 30px rgba(31,41,55,.04);
-        }
-
-        .advantage strong {
-            display: block;
-
-            font-size: 20px;
-
-            margin-bottom: 8px;
-        }
-
-        .advantage p {
-            color: #697386;
-        }
-
-        /* =================================================
-           HOW IT WORKS
-           ================================================= */
-
-        .steps {
-            display: grid;
-
-            grid-template-columns:
-                repeat(4, 1fr);
-
-            gap: 20px;
-        }
-
-        .step {
-            position: relative;
-
-            padding: 25px;
-
-            border: 1px solid #e1e7f2;
-
-            border-radius: 18px;
-
-            background: white;
-        }
-
-        .step-number {
-            font-size: 14px;
-
-            font-weight: 800;
-
-            color: #2563eb;
-
-            margin-bottom: 15px;
-        }
-
-        .step h3 {
-            margin-bottom: 8px;
-        }
-
-        .step p {
-            color: #697386;
-        }
-
-        /* =================================================
-           CTA
-           ================================================= */
-
-        .cta {
-            background:
-                radial-gradient(
-                    circle at 20% 20%,
-                    rgba(255,255,255,.14),
-                    transparent 30%
-                ),
-                linear-gradient(
-                    135deg,
-                    #172554,
-                    #4c1d95
-                );
-
-            color: white;
-
-            border-radius: 28px;
-
-            padding: 55px;
-
-            text-align: center;
-
-            box-shadow:
-                0 25px 60px rgba(37,45,100,.20);
-        }
-
-        .cta h2 {
-            font-size: clamp(30px, 5vw, 48px);
-
-            margin-bottom: 15px;
-        }
-
-        .cta p {
-            color: #e1e7ff;
-
-            font-size: 18px;
-
-            margin-bottom: 28px;
-        }
-
-        .cta .btn-primary {
-            background: white;
-
-            color: #172033;
-
-            box-shadow: none;
-        }
-
-        /* =================================================
-           CONTACTS
-           ================================================= */
-
-        .contacts {
-            display: grid;
-
-            grid-template-columns:
-                1fr 1fr;
-
-            gap: 30px;
-        }
-
-        .contact-card {
-            padding: 30px;
-
-            border: 1px solid #e1e7f2;
-
-            border-radius: 20px;
-
-            background: #ffffff;
-        }
-
-        .contact-card h3 {
-            margin-bottom: 15px;
-        }
-
-        .contact-card p {
-            color: #697386;
-
-            margin-bottom: 12px;
-        }
-
-        .contact-phone {
-            font-size: 25px;
-
-            font-weight: 800;
-
-            display: inline-block;
-
-            margin-top: 10px;
-
-            color: #2563eb;
-        }
-
-        /* =================================================
-           FOOTER
-           ================================================= */
-
-        footer {
-            padding: 35px 0;
-
-            border-top: 1px solid #e5e9f1;
-
-            color: #697386;
-
-            font-size: 14px;
-        }
-
-        .footer-inner {
-            display: flex;
-
-            justify-content: space-between;
-
-            gap: 20px;
-
-            flex-wrap: wrap;
-        }
-
-        /* =================================================
-           MOBILE
-           ================================================= */
-
-        @media (max-width: 850px) {
-
-            .hero-grid {
-                grid-template-columns: 1fr;
-            }
-
-            .services-grid {
-                grid-template-columns: 1fr 1fr;
-            }
-
-            .advantages-grid {
-                grid-template-columns: 1fr 1fr;
-            }
-
-            .steps {
-                grid-template-columns: 1fr 1fr;
-            }
-
-            .contacts {
-                grid-template-columns: 1fr;
-            }
-
-            .header-phone {
-                display: none;
-            }
-
-        }
-
-        @media (max-width: 600px) {
-
-            .hero {
-                padding: 55px 0;
-            }
-
-            section {
-                padding: 55px 0;
-            }
-
-            .services-grid,
-            .advantages-grid,
-            .steps {
-                grid-template-columns: 1fr;
-            }
-
-            .header-button {
-                padding: 10px 13px;
-
-                font-size: 14px;
-            }
-
-            .logo {
-                font-size: 19px;
-            }
-
-            .hero-card {
-                padding: 22px;
-            }
-
-            .cta {
-                padding: 35px 20px;
-
-                border-radius: 20px;
-            }
-
-            .btn {
-                width: 100%;
-            }
-
-        }
-
-    </style>
+</style>
 
 </head>
 
@@ -704,34 +809,45 @@
 <body>
 
 
+<!-- ======================================================
+     HEADER
+====================================================== -->
+
 <header>
 
-    <div class="container header-inner">
+<div class="container header-inner">
 
-        <a href="#top" class="logo">
-            Мастер Мурино
-            <span>Ремонт и бытовые услуги</span>
-        </a>
+<a href="#top" class="logo">
 
-        <a
-            class="header-phone"
-            href="tel:+79500091169"
-            onclick="trackPhoneClick()"
-        >
-            📞 Позвонить
-        </a>
+    Мастер Мурино
 
-        <a
-            class="header-button telegram-link"
-            href="#"
-            target="_blank"
-            rel="noopener"
-            onclick="trackTelegramClick()"
-        >
-            Оставить заявку
-        </a>
+    <span>
+        Ремонт и бытовые услуги
+    </span>
 
-    </div>
+</a>
+
+
+<a
+    class="header-phone"
+    href="tel:+79500091169"
+    onclick="trackPhoneClick()"
+>
+    📞 +7 (950) 009-11-69
+</a>
+
+
+<a
+    class="header-button telegram-link"
+    href="#"
+    target="_blank"
+    rel="noopener"
+    onclick="openTelegram(event)"
+>
+    Оставить заявку
+</a>
+
+</div>
 
 </header>
 
@@ -739,479 +855,551 @@
 <main id="top">
 
 
+<!-- ======================================================
+     HERO
+====================================================== -->
+
 <section class="hero">
 
-    <div class="container hero-grid">
+<div class="container hero-grid">
 
-        <div>
+<div>
 
-            <div class="badge">
-                📍 Мурино и ближайшие районы
-            </div>
-
-            <h1>
-                Ремонт техники
-                <span>и мастер на час</span>
-            </h1>
-
-            <p class="hero-text">
-                Выезд мастера в Мурино.
-                Бытовая техника, электрика,
-                сантехника и мелкий ремонт.
-            </p>
-
-            <div class="buttons">
-
-                <a
-                    class="btn btn-primary telegram-link"
-                    href="#"
-                    target="_blank"
-                    rel="noopener"
-                    onclick="trackTelegramClick()"
-                >
-                    📝 Оставить заявку
-                </a>
-
-                <a
-                    class="btn btn-secondary"
-                    href="tel:+79500091169"
-                    onclick="trackPhoneClick()"
-                >
-                    📞 Позвонить мастеру
-                </a>
-
-            </div>
-
-        </div>
+<div class="badge">
+    📍 Мурино и ближайшие районы
+</div>
 
 
-        <div class="hero-card">
+<h1>
 
-            <h3>
-                Что можно заказать
-            </h3>
+    Ремонт техники
 
-            <ul class="hero-list">
+    <span>
+        и мастер на час
+    </span>
 
-                <li>🔧 Ремонт бытовой техники</li>
-                <li>🛠 Мастер на час</li>
-                <li>⚡ Электрика</li>
-                <li>🚰 Сантехника</li>
-                <li>🪑 Мелкий ремонт и сборка</li>
+</h1>
 
-            </ul>
 
-        </div>
+<p class="hero-text">
 
-    </div>
+    Выезд мастера в Мурино.
+    Бытовая техника, электрика,
+    сантехника и мелкий ремонт.
+
+</p>
+
+
+<div class="buttons">
+
+
+<a
+    class="btn btn-primary telegram-link"
+    href="#"
+    target="_blank"
+    rel="noopener"
+    onclick="openTelegram(event)"
+>
+    📝 Оставить заявку
+</a>
+
+
+<a
+    class="btn btn-secondary"
+    href="tel:+79500091169"
+    onclick="trackPhoneClick()"
+>
+    📞 Позвонить мастеру
+</a>
+
+
+</div>
+
+</div>
+
+
+<div class="hero-card">
+
+<h3>
+    Что можно заказать
+</h3>
+
+<ul class="hero-list">
+
+<li>
+    🔧 Ремонт бытовой техники
+</li>
+
+<li>
+    🛠 Мастер на час
+</li>
+
+<li>
+    ⚡ Электрика
+</li>
+
+<li>
+    🚰 Сантехника
+</li>
+
+<li>
+    🪑 Мелкий ремонт и сборка
+</li>
+
+</ul>
+
+</div>
+
+</div>
 
 </section>
 
+
+<!-- ======================================================
+     SERVICES
+====================================================== -->
 
 <section>
 
-    <div class="container">
+<div class="container">
 
-        <h2 class="section-title">
-            Услуги
-        </h2>
+<h2 class="section-title">
+    Услуги
+</h2>
 
-        <p class="section-subtitle">
-            Помогаем с бытовыми поломками и техническими
-            задачами по дому. Если вашей проблемы нет
-            в списке — просто опишите её в заявке.
-        </p>
+<p class="section-subtitle">
 
+    Помогаем с бытовыми поломками
+    и техническими задачами по дому.
+    Если вашей проблемы нет в списке —
+    просто опишите её в заявке.
 
-        <div class="services-grid">
-
-
-            <div class="service">
-
-                <div class="service-icon">
-                    🔧
-                </div>
-
-                <h3>
-                    Ремонт бытовой техники
-                </h3>
-
-                <p>
-                    Стиральные машины, холодильники,
-                    плиты, духовки, посудомоечные машины
-                    и другая техника.
-                </p>
-
-            </div>
+</p>
 
 
-            <div class="service">
-
-                <div class="service-icon">
-                    🛠
-                </div>
-
-                <h3>
-                    Мастер на час
-                </h3>
-
-                <p>
-                    Сборка мебели, установка полок,
-                    карнизов, техники и различные
-                    бытовые работы.
-                </p>
-
-            </div>
+<div class="services-grid">
 
 
-            <div class="service">
+<div class="service">
 
-                <div class="service-icon">
-                    ⚡
-                </div>
+<div class="service-icon">
+    🔧
+</div>
 
-                <h3>
-                    Электрика
-                </h3>
+<h3>
+    Ремонт бытовой техники
+</h3>
 
-                <p>
-                    Розетки, выключатели, светильники,
-                    подключение техники и мелкие
-                    электромонтажные работы.
-                </p>
+<p>
 
-            </div>
+    Стиральные машины, холодильники,
+    плиты, духовки, посудомоечные машины
+    и другая техника.
 
+</p>
 
-            <div class="service">
-
-                <div class="service-icon">
-                    🚰
-                </div>
-
-                <h3>
-                    Сантехника
-                </h3>
-
-                <p>
-                    Замена смесителей, сифонов,
-                    подключение техники и устранение
-                    небольших неисправностей.
-                </p>
-
-            </div>
+</div>
 
 
-            <div class="service">
+<div class="service">
 
-                <div class="service-icon">
-                    🪑
-                </div>
+<div class="service-icon">
+    🛠
+</div>
 
-                <h3>
-                    Сборка и ремонт
-                </h3>
+<h3>
+    Мастер на час
+</h3>
 
-                <p>
-                    Мебель, крепления, бытовые конструкции
-                    и различные мелкие ремонтные работы.
-                </p>
+<p>
 
-            </div>
+    Сборка мебели, установка полок,
+    карнизов, техники и различные
+    бытовые работы.
 
+</p>
 
-            <div class="service">
-
-                <div class="service-icon">
-                    ❓
-                </div>
-
-                <h3>
-                    Другая задача
-                </h3>
-
-                <p>
-                    Не нашли нужную услугу?
-                    Напишите, что необходимо сделать —
-                    обсудим задачу.
-                </p>
-
-            </div>
+</div>
 
 
-        </div>
+<div class="service">
 
-    </div>
+<div class="service-icon">
+    ⚡
+</div>
+
+<h3>
+    Электрика
+</h3>
+
+<p>
+
+    Розетки, выключатели, светильники,
+    подключение техники и мелкие
+    электромонтажные работы.
+
+</p>
+
+</div>
+
+
+<div class="service">
+
+<div class="service-icon">
+    🚰
+</div>
+
+<h3>
+    Сантехника
+</h3>
+
+<p>
+
+    Замена смесителей, сифонов,
+    подключение техники и устранение
+    небольших неисправностей.
+
+</p>
+
+</div>
+
+
+<div class="service">
+
+<div class="service-icon">
+    🪑
+</div>
+
+<h3>
+    Сборка и ремонт
+</h3>
+
+<p>
+
+    Мебель, крепления, бытовые конструкции
+    и различные мелкие ремонтные работы.
+
+</p>
+
+</div>
+
+
+<div class="service">
+
+<div class="service-icon">
+    ❓
+</div>
+
+<h3>
+    Другая задача
+</h3>
+
+<p>
+
+    Не нашли нужную услугу?
+    Напишите, что необходимо сделать —
+    обсудим задачу.
+
+</p>
+
+</div>
+
+
+</div>
+
+</div>
 
 </section>
 
+
+<!-- ======================================================
+     ADVANTAGES
+====================================================== -->
 
 <section class="advantages">
 
-    <div class="container">
+<div class="container">
 
-        <h2 class="section-title">
-            Почему обращаются к нам
-        </h2>
+<h2 class="section-title">
+    Почему обращаются к нам
+</h2>
 
-        <p class="section-subtitle">
-            Простая схема: описываете проблему,
-            отправляете заявку — мастер связывается
-            с вами и согласовывает детали.
-        </p>
+<p class="section-subtitle">
 
+    Простая схема: описываете проблему,
+    отправляете заявку — мастер связывается
+    с вами и согласовывает детали.
 
-        <div class="advantages-grid">
-
-
-            <div class="advantage">
-
-                <strong>
-                    📍 Мурино
-                </strong>
-
-                <p>
-                    Работаем в Мурино и ближайших районах.
-                </p>
-
-            </div>
+</p>
 
 
-            <div class="advantage">
-
-                <strong>
-                    📷 Фото неисправности
-                </strong>
-
-                <p>
-                    Можно сразу приложить фотографию
-                    или видео проблемы.
-                </p>
-
-            </div>
+<div class="advantages-grid">
 
 
-            <div class="advantage">
+<div class="advantage">
 
-                <strong>
-                    💬 Удобная заявка
-                </strong>
+<strong>
+    📍 Мурино
+</strong>
 
-                <p>
-                    Заявка оформляется прямо в Telegram.
-                </p>
+<p>
+    Работаем в Мурино и ближайших районах.
+</p>
 
-            </div>
-
-
-            <div class="advantage">
-
-                <strong>
-                    🛠 Разные работы
-                </strong>
-
-                <p>
-                    От ремонта техники до мелких
-                    бытовых задач.
-                </p>
-
-            </div>
+</div>
 
 
-        </div>
+<div class="advantage">
 
-    </div>
+<strong>
+    📷 Фото неисправности
+</strong>
 
-</section>
+<p>
+    Можно сразу приложить фотографию
+    или видео проблемы.
+</p>
 
-
-<section>
-
-    <div class="container">
-
-        <h2 class="section-title">
-            Как всё происходит
-        </h2>
-
-        <p class="section-subtitle">
-            Оставить заявку можно за несколько минут.
-        </p>
+</div>
 
 
-        <div class="steps">
+<div class="advantage">
+
+<strong>
+    💬 Удобная заявка
+</strong>
+
+<p>
+    Заявка оформляется прямо в Telegram.
+</p>
+
+</div>
 
 
-            <div class="step">
+<div class="advantage">
 
-                <div class="step-number">
-                    ШАГ 01
-                </div>
+<strong>
+    🛠 Разные работы
+</strong>
 
-                <h3>
-                    Оставляете заявку
-                </h3>
+<p>
+    От ремонта техники до мелких
+    бытовых задач.
+</p>
 
-                <p>
-                    Нажимаете кнопку и переходите
-                    в Telegram-бот.
-                </p>
-
-            </div>
+</div>
 
 
-            <div class="step">
+</div>
 
-                <div class="step-number">
-                    ШАГ 02
-                </div>
-
-                <h3>
-                    Описываете проблему
-                </h3>
-
-                <p>
-                    Указываете услугу, проблему,
-                    адрес и телефон.
-                </p>
-
-            </div>
-
-
-            <div class="step">
-
-                <div class="step-number">
-                    ШАГ 03
-                </div>
-
-                <h3>
-                    Прикладываете фото
-                </h3>
-
-                <p>
-                    При необходимости можно отправить
-                    фото или видео неисправности.
-                </p>
-
-            </div>
-
-
-            <div class="step">
-
-                <div class="step-number">
-                    ШАГ 04
-                </div>
-
-                <h3>
-                    Связываемся с вами
-                </h3>
-
-                <p>
-                    Получаем заявку и уточняем
-                    детали заказа.
-                </p>
-
-            </div>
-
-
-        </div>
-
-    </div>
+</div>
 
 </section>
 
 
+<!-- ======================================================
+     HOW IT WORKS
+====================================================== -->
+
 <section>
 
-    <div class="container">
+<div class="container">
 
-        <div class="cta">
+<h2 class="section-title">
+    Как всё происходит
+</h2>
 
-            <h2>
-                Нужен мастер?
-            </h2>
+<p class="section-subtitle">
+    Оставить заявку можно за несколько минут.
+</p>
 
-            <p>
-                Опишите проблему — можно приложить
-                фото или видео.
-            </p>
 
-            <a
-                class="btn btn-primary telegram-link"
-                href="#"
-                target="_blank"
-                rel="noopener"
-                onclick="trackTelegramClick()"
-            >
-                📝 Оставить заявку в Telegram
-            </a>
+<div class="steps">
 
-        </div>
 
-    </div>
+<div class="step">
+
+<div class="step-number">
+    ШАГ 01
+</div>
+
+<h3>
+    Оставляете заявку
+</h3>
+
+<p>
+    Нажимаете кнопку и переходите
+    в Telegram-бот.
+</p>
+
+</div>
+
+
+<div class="step">
+
+<div class="step-number">
+    ШАГ 02
+</div>
+
+<h3>
+    Описываете проблему
+</h3>
+
+<p>
+    Указываете услугу, проблему,
+    адрес и телефон.
+</p>
+
+</div>
+
+
+<div class="step">
+
+<div class="step-number">
+    ШАГ 03
+</div>
+
+<h3>
+    Прикладываете фото
+</h3>
+
+<p>
+    При необходимости можно отправить
+    фото или видео неисправности.
+</p>
+
+</div>
+
+
+<div class="step">
+
+<div class="step-number">
+    ШАГ 04
+</div>
+
+<h3>
+    Связываемся с вами
+</h3>
+
+<p>
+    Получаем заявку и уточняем
+    детали заказа.
+</p>
+
+</div>
+
+
+</div>
+
+</div>
 
 </section>
 
 
+<!-- ======================================================
+     CTA
+====================================================== -->
+
 <section>
 
-    <div class="container">
+<div class="container">
 
-        <h2 class="section-title">
-            Контакты
-        </h2>
+<div class="cta">
 
-        <div class="contacts">
+<h2>
+    Нужен мастер?
+</h2>
 
-
-            <div class="contact-card">
-
-                <h3>
-                    📱 Telegram
-                </h3>
-
-                <p>
-                    Быстрее всего оставить заявку
-                    через Telegram-бот.
-                </p>
-
-                <a
-                    class="btn btn-primary telegram-link"
-                    href="#"
-                    target="_blank"
-                    rel="noopener"
-                    onclick="trackTelegramClick()"
-                >
-                    Открыть Telegram
-                </a>
-
-            </div>
+<p>
+    Опишите проблему — можно приложить
+    фото или видео.
+</p>
 
 
-            <div class="contact-card">
+<a
+    class="btn btn-primary telegram-link"
+    href="#"
+    target="_blank"
+    rel="noopener"
+    onclick="openTelegram(event)"
+>
+    📝 Оставить заявку в Telegram
+</a>
 
-                <h3>
-                    📞 Телефон
-                </h3>
+</div>
 
-                <p>
-                    Если удобнее обсудить задачу
-                    голосом — позвоните мастеру.
-                </p>
+</div>
 
-                <a
-                    class="contact-phone"
-                    href="tel:+79500091169"
-                    onclick="trackPhoneClick()"
-                >
-                    +7 (950) 009-11-69
-                </a>
-
-            </div>
+</section>
 
 
-        </div>
+<!-- ======================================================
+     CONTACTS
+====================================================== -->
 
-    </div>
+<section>
+
+<div class="container">
+
+<h2 class="section-title">
+    Контакты
+</h2>
+
+
+<div class="contacts">
+
+
+<div class="contact-card">
+
+<h3>
+    📱 Telegram
+</h3>
+
+<p>
+    Быстрее всего оставить заявку
+    через Telegram-бот.
+</p>
+
+
+<a
+    class="btn btn-primary telegram-link"
+    href="#"
+    target="_blank"
+    rel="noopener"
+    onclick="openTelegram(event)"
+>
+    Открыть Telegram
+</a>
+
+</div>
+
+
+<div class="contact-card">
+
+<h3>
+    📞 Телефон
+</h3>
+
+<p>
+    Если удобнее обсудить задачу
+    голосом — позвоните мастеру.
+</p>
+
+
+<a
+    class="contact-phone"
+    href="tel:+79500091169"
+    onclick="trackPhoneClick()"
+>
+    +7 (950) 009-11-69
+</a>
+
+</div>
+
+
+</div>
+
+</div>
 
 </section>
 
@@ -1219,191 +1407,252 @@
 </main>
 
 
+<!-- ======================================================
+     FOOTER
+====================================================== -->
+
 <footer>
 
-    <div class="container footer-inner">
+<div class="container footer-inner">
 
-        <div>
-            © 2026 Мастер Мурино
-        </div>
+<div>
+    © 2026 Мастер Мурино
+</div>
 
-        <div>
-            Ремонт и бытовые услуги в Мурино
-        </div>
+<div>
+    Ремонт и бытовые услуги в Мурино
+</div>
 
-    </div>
+</div>
 
 </footer>
 
 
-<!-- =====================================================
+<!-- ======================================================
      JAVASCRIPT
-     ===================================================== -->
+     UTM → TELEGRAM
+====================================================== -->
 
 <script>
 
-    /*
-     * =====================================================
-     * ПОЛУЧАЕМ UTM-МЕТКИ И ИСТОЧНИК
-     * =====================================================
-     */
 
-    function getTrackingData() {
+/* ======================================================
+   ПОЛУЧАЕМ UTM-МЕТКИ
+====================================================== */
 
-        const params = new URLSearchParams(
+function getUTM(){
+
+    const params =
+        new URLSearchParams(
             window.location.search
         );
 
-        const data = {
-            utm_source: params.get("utm_source") || "",
-            utm_medium: params.get("utm_medium") || "",
-            utm_campaign: params.get("utm_campaign") || "",
-            utm_content: params.get("utm_content") || "",
-            utm_term: params.get("utm_term") || ""
-        };
+    return {
 
-        return data;
-    }
+        source:
+            params.get("utm_source")
+            || "site",
 
+        campaign:
+            params.get("utm_campaign")
+            || "",
 
-    /*
-     * =====================================================
-     * ОПРЕДЕЛЯЕМ ИСТОЧНИК
-     * =====================================================
-     */
+        medium:
+            params.get("utm_medium")
+            || "",
 
-    function getSource() {
+        term:
+            params.get("utm_term")
+            || "",
 
-        const data = getTrackingData();
+        content:
+            params.get("utm_content")
+            || ""
+    };
 
-        if (data.utm_source) {
-
-            return data.utm_source;
-
-        }
-
-        return "site";
-    }
+}
 
 
-    /*
-     * =====================================================
-     * СОЗДАЁМ ССЫЛКУ TELEGRAM
-     * =====================================================
-     *
-     * Сейчас Telegram получает источник через start.
-     *
-     * Если пользователь пришёл с UTM:
-     *
-     * ?utm_source=yandex
-     *
-     * бот получит:
-     *
-     * /start yandex
-     *
-     * =====================================================
-     */
+/* ======================================================
+   СЖИМАЕМ ДАННЫЕ ДЛЯ TELEGRAM
+====================================================== */
 
-    function getTelegramLink() {
+function createTelegramLink(){
 
-        const data = getTrackingData();
-
-        let source = data.utm_source;
-
-        if (!source) {
-
-            source = "site";
-
-        }
-
-        source = source.toLowerCase();
-
-        /*
-         * Разрешённые источники.
-         */
-
-        const sourceMap = {
-            "yandex": "yandex",
-            "google": "google",
-            "vk": "vk",
-            "avito": "avito",
-            "telegram": "telegram",
-            "site": "site"
-        };
-
-        source = sourceMap[source] || "site";
-
-        return "https://t.me/MasterMurinoBot?start=" + source;
-    }
+    const utm = getUTM();
 
 
     /*
-     * =====================================================
-     * ПОДСТАВЛЯЕМ TELEGRAM-ССЫЛКУ ВО ВСЕ КНОПКИ
-     * =====================================================
-     */
+       Telegram ограничивает start-параметр.
 
-    document.addEventListener(
-        "DOMContentLoaded",
-        function() {
+       Поэтому сокращаем значения.
+    */
 
-            const telegramLink =
-                getTelegramLink();
+    const data = {
 
-            document
-                .querySelectorAll(".telegram-link")
-                .forEach(function(link) {
+        s: utm.source.substring(0,7),
 
-                    link.href = telegramLink;
+        c: utm.campaign.substring(0,7),
 
-                });
+        m: utm.medium.substring(0,7),
 
-        }
+        t: utm.term.substring(0,7),
+
+        o: utm.content.substring(0,7)
+
+    };
+
+
+    const json =
+        JSON.stringify(data);
+
+
+    const encoded =
+        btoa(
+            unescape(
+                encodeURIComponent(json)
+            )
+        )
+        .replace(/\+/g,"-")
+        .replace(/\//g,"_")
+        .replace(/=/g,"");
+
+
+    let parameter =
+        "site_" + encoded;
+
+
+    /*
+       Защита от превышения
+       ограничения Telegram.
+    */
+
+    if(parameter.length > 64){
+
+        parameter =
+            "site";
+
+    }
+
+
+    return (
+        "https://t.me/MasterMurinoBot?start="
+        + parameter
     );
 
+}
+
+
+/* ======================================================
+   УСТАНАВЛИВАЕМ ССЫЛКИ TELEGRAM
+====================================================== */
+
+function prepareTelegramLinks(){
+
+    const links =
+        document.querySelectorAll(
+            ".telegram-link"
+        );
+
+
+    const telegramUrl =
+        createTelegramLink();
+
+
+    links.forEach(function(link){
+
+        link.href =
+            telegramUrl;
+
+    });
+
+}
+
+
+/* ======================================================
+   ПЕРЕХОД В TELEGRAM
+====================================================== */
+
+function openTelegram(event){
+
+    event.preventDefault();
+
+
+    const url =
+        createTelegramLink();
+
 
     /*
-     * =====================================================
-     * ЦЕЛЬ ЯНДЕКС МЕТРИКИ
-     * =====================================================
-     */
+       ЦЕЛЬ ЯНДЕКС МЕТРИКИ
+    */
 
-    function trackTelegramClick() {
+    if(typeof ym === "function"){
 
-        if (typeof ym === "function") {
+        ym(
+            111532341,
+            "reachGoal",
+            "Переход в Telegram"
+        );
 
-            ym(
-                111532341,
-                "reachGoal",
-                "Переход в Telegram"
-            );
-
-        }
     }
 
 
     /*
-     * =====================================================
-     * КЛИК ПО ТЕЛЕФОНУ
-     * =====================================================
-     */
+       Небольшая задержка,
+       чтобы Метрика успела
+       зарегистрировать цель.
+    */
 
-    function trackPhoneClick() {
+    setTimeout(
+        function(){
 
-        if (typeof ym === "function") {
-
-            ym(
-                111532341,
-                "reachGoal",
-                "phone_click"
+            window.open(
+                url,
+                "_blank"
             );
 
-        }
+        },
+        150
+    );
+
+}
+
+
+/* ======================================================
+   КЛИК ПО ТЕЛЕФОНУ
+====================================================== */
+
+function trackPhoneClick(){
+
+    if(typeof ym === "function"){
+
+        ym(
+            111532341,
+            "reachGoal",
+            "phone_click"
+        );
 
     }
+
+}
+
+
+/* ======================================================
+   ЗАПУСК
+====================================================== */
+
+document.addEventListener(
+    "DOMContentLoaded",
+    function(){
+
+        prepareTelegramLinks();
+
+    }
+);
 
 </script>
 
 
 </body>
+
 </html>
