@@ -3,8 +3,7 @@
 <head>
     <meta charset="UTF-8">
 
-    <meta name="viewport"
-          content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>Мастер Мурино — ремонт бытовой техники и мастер на час</title>
 
@@ -48,14 +47,14 @@
         );
 
         ym(111532341, 'init', {
-            ssr:true,
-            webvisor:true,
-            clickmap:true,
-            ecommerce:"dataLayer",
-            referrer:document.referrer,
-            url:location.href,
-            accurateTrackBounce:true,
-            trackLinks:true
+            ssr: true,
+            webvisor: true,
+            clickmap: true,
+            ecommerce: "dataLayer",
+            referrer: document.referrer,
+            url: location.href,
+            accurateTrackBounce: true,
+            trackLinks: true
         });
     </script>
 
@@ -84,12 +83,8 @@
         }
 
         body {
-            font-family:
-                Arial,
-                Helvetica,
-                sans-serif;
-
-            color: #202124;
+            font-family: Arial, Helvetica, sans-serif;
+            color: #172033;
             background: #ffffff;
             line-height: 1.5;
         }
@@ -113,15 +108,15 @@
             top: 0;
             z-index: 1000;
 
-            background: rgba(255,255,255,0.96);
+            background: rgba(255,255,255,0.94);
 
-            border-bottom: 1px solid #eeeeee;
+            border-bottom: 1px solid #e6eaf2;
 
-            backdrop-filter: blur(10px);
+            backdrop-filter: blur(12px);
         }
 
         .header-inner {
-            min-height: 70px;
+            min-height: 72px;
 
             display: flex;
             align-items: center;
@@ -133,28 +128,34 @@
         .logo {
             font-size: 22px;
             font-weight: 800;
+            color: #172033;
         }
 
         .logo span {
             display: block;
+
             font-size: 12px;
             font-weight: 400;
-            color: #777;
+
+            color: #697386;
         }
 
         .header-phone {
             font-weight: 700;
+            color: #334155;
         }
 
         .header-button {
-            background: #111111;
+            background: linear-gradient(135deg, #2563eb, #7c3aed);
             color: white;
 
-            padding: 12px 18px;
+            padding: 12px 20px;
 
-            border-radius: 10px;
+            border-radius: 11px;
 
             font-weight: 700;
+
+            box-shadow: 0 8px 22px rgba(37,99,235,.20);
         }
 
         /* =================================================
@@ -162,12 +163,22 @@
            ================================================= */
 
         .hero {
-            padding: 80px 0 70px;
+            padding: 85px 0 75px;
 
             background:
+                radial-gradient(
+                    circle at 10% 20%,
+                    rgba(37,99,235,.12),
+                    transparent 35%
+                ),
+                radial-gradient(
+                    circle at 90% 80%,
+                    rgba(124,58,237,.12),
+                    transparent 35%
+                ),
                 linear-gradient(
                     135deg,
-                    #f7f7f7 0%,
+                    #f7faff 0%,
                     #ffffff 100%
                 );
         }
@@ -175,9 +186,7 @@
         .hero-grid {
             display: grid;
 
-            grid-template-columns:
-                1.2fr
-                0.8fr;
+            grid-template-columns: 1.2fr 0.8fr;
 
             gap: 50px;
 
@@ -187,9 +196,11 @@
         .badge {
             display: inline-block;
 
-            padding: 7px 12px;
+            padding: 8px 14px;
 
-            background: #eeeeee;
+            background: #e8f0ff;
+
+            color: #2457c5;
 
             border-radius: 30px;
 
@@ -205,16 +216,27 @@
             line-height: 1.05;
 
             margin-bottom: 24px;
+
+            letter-spacing: -1.5px;
         }
 
         .hero h1 span {
-            color: #555;
+            display: block;
+
+            background: linear-gradient(
+                90deg,
+                #2563eb,
+                #7c3aed
+            );
+
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
         }
 
         .hero-text {
             font-size: 20px;
 
-            color: #555;
+            color: #596579;
 
             max-width: 650px;
 
@@ -245,35 +267,49 @@
 
             transition:
                 transform .2s,
-                opacity .2s;
+                opacity .2s,
+                box-shadow .2s;
         }
 
         .btn:hover {
             transform: translateY(-2px);
-            opacity: .9;
+            opacity: .94;
         }
 
         .btn-primary {
-            background: #111111;
+            background: linear-gradient(
+                135deg,
+                #2563eb,
+                #7c3aed
+            );
+
             color: white;
+
+            box-shadow:
+                0 10px 28px rgba(37,99,235,.22);
         }
 
         .btn-secondary {
-            background: #eeeeee;
-            color: #111111;
+            background: #eef2f7;
+            color: #172033;
         }
 
         .hero-card {
-            background: white;
+            background:
+                linear-gradient(
+                    145deg,
+                    #ffffff,
+                    #f5f7ff
+                );
 
-            border: 1px solid #e8e8e8;
+            border: 1px solid #e1e7f2;
 
             border-radius: 24px;
 
             padding: 30px;
 
             box-shadow:
-                0 20px 60px rgba(0,0,0,.08);
+                0 20px 60px rgba(31,41,55,.10);
         }
 
         .hero-card h3 {
@@ -287,10 +323,10 @@
         }
 
         .hero-list li {
-            padding: 12px 0;
+            padding: 13px 0;
 
             border-bottom:
-                1px solid #eeeeee;
+                1px solid #e6eaf2;
         }
 
         .hero-list li:last-child {
@@ -309,10 +345,12 @@
             font-size: clamp(30px, 5vw, 44px);
 
             margin-bottom: 14px;
+
+            color: #172033;
         }
 
         .section-subtitle {
-            color: #666;
+            color: #697386;
 
             font-size: 18px;
 
@@ -337,22 +375,25 @@
         .service {
             padding: 26px;
 
-            border: 1px solid #e8e8e8;
+            border: 1px solid #e3e8f1;
 
             border-radius: 18px;
 
-            background: white;
+            background: #ffffff;
 
             transition:
                 transform .2s,
-                box-shadow .2s;
+                box-shadow .2s,
+                border-color .2s;
         }
 
         .service:hover {
             transform: translateY(-4px);
 
+            border-color: #b9c9ed;
+
             box-shadow:
-                0 15px 40px rgba(0,0,0,.07);
+                0 15px 40px rgba(37,99,235,.09);
         }
 
         .service-icon {
@@ -368,7 +409,7 @@
         }
 
         .service p {
-            color: #666;
+            color: #697386;
         }
 
         /* =================================================
@@ -376,7 +417,12 @@
            ================================================= */
 
         .advantages {
-            background: #f7f7f7;
+            background:
+                linear-gradient(
+                    135deg,
+                    #f5f8ff,
+                    #faf7ff
+                );
         }
 
         .advantages-grid {
@@ -395,7 +441,10 @@
 
             border-radius: 18px;
 
-            border: 1px solid #e7e7e7;
+            border: 1px solid #e1e7f2;
+
+            box-shadow:
+                0 8px 30px rgba(31,41,55,.04);
         }
 
         .advantage strong {
@@ -407,7 +456,7 @@
         }
 
         .advantage p {
-            color: #666;
+            color: #697386;
         }
 
         /* =================================================
@@ -428,9 +477,11 @@
 
             padding: 25px;
 
-            border: 1px solid #e7e7e7;
+            border: 1px solid #e1e7f2;
 
             border-radius: 18px;
+
+            background: white;
         }
 
         .step-number {
@@ -438,7 +489,7 @@
 
             font-weight: 800;
 
-            color: #777;
+            color: #2563eb;
 
             margin-bottom: 15px;
         }
@@ -448,7 +499,7 @@
         }
 
         .step p {
-            color: #666;
+            color: #697386;
         }
 
         /* =================================================
@@ -456,7 +507,17 @@
            ================================================= */
 
         .cta {
-            background: #111111;
+            background:
+                radial-gradient(
+                    circle at 20% 20%,
+                    rgba(255,255,255,.14),
+                    transparent 30%
+                ),
+                linear-gradient(
+                    135deg,
+                    #172554,
+                    #4c1d95
+                );
 
             color: white;
 
@@ -465,6 +526,9 @@
             padding: 55px;
 
             text-align: center;
+
+            box-shadow:
+                0 25px 60px rgba(37,45,100,.20);
         }
 
         .cta h2 {
@@ -474,7 +538,7 @@
         }
 
         .cta p {
-            color: #cccccc;
+            color: #e1e7ff;
 
             font-size: 18px;
 
@@ -483,7 +547,10 @@
 
         .cta .btn-primary {
             background: white;
-            color: #111111;
+
+            color: #172033;
+
+            box-shadow: none;
         }
 
         /* =================================================
@@ -502,9 +569,11 @@
         .contact-card {
             padding: 30px;
 
-            border: 1px solid #e7e7e7;
+            border: 1px solid #e1e7f2;
 
             border-radius: 20px;
+
+            background: #ffffff;
         }
 
         .contact-card h3 {
@@ -512,7 +581,7 @@
         }
 
         .contact-card p {
-            color: #666;
+            color: #697386;
 
             margin-bottom: 12px;
         }
@@ -525,6 +594,8 @@
             display: inline-block;
 
             margin-top: 10px;
+
+            color: #2563eb;
         }
 
         /* =================================================
@@ -534,9 +605,9 @@
         footer {
             padding: 35px 0;
 
-            border-top: 1px solid #eeeeee;
+            border-top: 1px solid #e5e9f1;
 
-            color: #777;
+            color: #697386;
 
             font-size: 14px;
         }
@@ -633,10 +704,6 @@
 <body>
 
 
-<!-- =======================================================
-     HEADER
-     ======================================================= -->
-
 <header>
 
     <div class="container header-inner">
@@ -655,8 +722,8 @@
         </a>
 
         <a
-            class="header-button"
-            href="https://t.me/MasterMurinoBot?start=site"
+            class="header-button telegram-link"
+            href="#"
             target="_blank"
             rel="noopener"
             onclick="trackTelegramClick()"
@@ -671,10 +738,6 @@
 
 <main id="top">
 
-
-<!-- =======================================================
-     HERO
-     ======================================================= -->
 
 <section class="hero">
 
@@ -700,8 +763,8 @@
             <div class="buttons">
 
                 <a
-                    class="btn btn-primary"
-                    href="https://t.me/MasterMurinoBot?start=site"
+                    class="btn btn-primary telegram-link"
+                    href="#"
                     target="_blank"
                     rel="noopener"
                     onclick="trackTelegramClick()"
@@ -731,13 +794,9 @@
             <ul class="hero-list">
 
                 <li>🔧 Ремонт бытовой техники</li>
-
                 <li>🛠 Мастер на час</li>
-
                 <li>⚡ Электрика</li>
-
                 <li>🚰 Сантехника</li>
-
                 <li>🪑 Мелкий ремонт и сборка</li>
 
             </ul>
@@ -748,10 +807,6 @@
 
 </section>
 
-
-<!-- =======================================================
-     SERVICES
-     ======================================================= -->
 
 <section>
 
@@ -891,10 +946,6 @@
 </section>
 
 
-<!-- =======================================================
-     ADVANTAGES
-     ======================================================= -->
-
 <section class="advantages">
 
     <div class="container">
@@ -973,10 +1024,6 @@
 
 </section>
 
-
-<!-- =======================================================
-     HOW IT WORKS
-     ======================================================= -->
 
 <section>
 
@@ -1073,10 +1120,6 @@
 </section>
 
 
-<!-- =======================================================
-     CTA
-     ======================================================= -->
-
 <section>
 
     <div class="container">
@@ -1093,8 +1136,8 @@
             </p>
 
             <a
-                class="btn btn-primary"
-                href="https://t.me/MasterMurinoBot?start=site"
+                class="btn btn-primary telegram-link"
+                href="#"
                 target="_blank"
                 rel="noopener"
                 onclick="trackTelegramClick()"
@@ -1108,10 +1151,6 @@
 
 </section>
 
-
-<!-- =======================================================
-     CONTACTS
-     ======================================================= -->
 
 <section>
 
@@ -1136,8 +1175,8 @@
                 </p>
 
                 <a
-                    class="btn btn-primary"
-                    href="https://t.me/MasterMurinoBot?start=site"
+                    class="btn btn-primary telegram-link"
+                    href="#"
                     target="_blank"
                     rel="noopener"
                     onclick="trackTelegramClick()"
@@ -1164,7 +1203,7 @@
                     href="tel:+79500091169"
                     onclick="trackPhoneClick()"
                 >
-                    +7 (950)009-11-69
+                    +7 (950) 009-11-69
                 </a>
 
             </div>
@@ -1179,10 +1218,6 @@
 
 </main>
 
-
-<!-- =======================================================
-     FOOTER
-     ======================================================= -->
 
 <footer>
 
@@ -1201,21 +1236,136 @@
 </footer>
 
 
-<!-- =======================================================
-     JAVASCRIPT — МЕТРИКА
-     ======================================================= -->
+<!-- =====================================================
+     JAVASCRIPT
+     ===================================================== -->
 
 <script>
 
     /*
-     * Переход в Telegram
+     * =====================================================
+     * ПОЛУЧАЕМ UTM-МЕТКИ И ИСТОЧНИК
+     * =====================================================
+     */
+
+    function getTrackingData() {
+
+        const params = new URLSearchParams(
+            window.location.search
+        );
+
+        const data = {
+            utm_source: params.get("utm_source") || "",
+            utm_medium: params.get("utm_medium") || "",
+            utm_campaign: params.get("utm_campaign") || "",
+            utm_content: params.get("utm_content") || "",
+            utm_term: params.get("utm_term") || ""
+        };
+
+        return data;
+    }
+
+
+    /*
+     * =====================================================
+     * ОПРЕДЕЛЯЕМ ИСТОЧНИК
+     * =====================================================
+     */
+
+    function getSource() {
+
+        const data = getTrackingData();
+
+        if (data.utm_source) {
+
+            return data.utm_source;
+
+        }
+
+        return "site";
+    }
+
+
+    /*
+     * =====================================================
+     * СОЗДАЁМ ССЫЛКУ TELEGRAM
+     * =====================================================
      *
-     * Цель Яндекс Метрики:
-     * «Переход в Telegram»
+     * Сейчас Telegram получает источник через start.
      *
-     * Важно:
-     * название цели в Метрике должно совпадать
-     * с названием, которое используется здесь.
+     * Если пользователь пришёл с UTM:
+     *
+     * ?utm_source=yandex
+     *
+     * бот получит:
+     *
+     * /start yandex
+     *
+     * =====================================================
+     */
+
+    function getTelegramLink() {
+
+        const data = getTrackingData();
+
+        let source = data.utm_source;
+
+        if (!source) {
+
+            source = "site";
+
+        }
+
+        source = source.toLowerCase();
+
+        /*
+         * Разрешённые источники.
+         */
+
+        const sourceMap = {
+            "yandex": "yandex",
+            "google": "google",
+            "vk": "vk",
+            "avito": "avito",
+            "telegram": "telegram",
+            "site": "site"
+        };
+
+        source = sourceMap[source] || "site";
+
+        return "https://t.me/MasterMurinoBot?start=" + source;
+    }
+
+
+    /*
+     * =====================================================
+     * ПОДСТАВЛЯЕМ TELEGRAM-ССЫЛКУ ВО ВСЕ КНОПКИ
+     * =====================================================
+     */
+
+    document.addEventListener(
+        "DOMContentLoaded",
+        function() {
+
+            const telegramLink =
+                getTelegramLink();
+
+            document
+                .querySelectorAll(".telegram-link")
+                .forEach(function(link) {
+
+                    link.href = telegramLink;
+
+                });
+
+        }
+    );
+
+
+    /*
+     * =====================================================
+     * ЦЕЛЬ ЯНДЕКС МЕТРИКИ
+     * =====================================================
      */
 
     function trackTelegramClick() {
@@ -1224,8 +1374,8 @@
 
             ym(
                 111532341,
-                'reachGoal',
-                'Переход в Telegram'
+                "reachGoal",
+                "Переход в Telegram"
             );
 
         }
@@ -1233,12 +1383,9 @@
 
 
     /*
-     * Клик по телефону
-     *
-     * Пока отдельную цель для него
-     * в Метрике не создаём.
-     *
-     * Функция уже подготовлена на будущее.
+     * =====================================================
+     * КЛИК ПО ТЕЛЕФОНУ
+     * =====================================================
      */
 
     function trackPhoneClick() {
@@ -1247,11 +1394,12 @@
 
             ym(
                 111532341,
-                'reachGoal',
-                'phone_click'
+                "reachGoal",
+                "phone_click"
             );
 
         }
+
     }
 
 </script>
