@@ -7,8 +7,66 @@
 
 <title>Мастер Мурино — ремонт бытовой техники и мастер на час</title>
 
-<meta name="description"
-content="Ремонт бытовой техники, мастер на час, электрика и сантехника в Мурино. Выезд мастера. Оставьте заявку онлайн.">
+<meta name="description" content="Ремонт бытовой техники, мастер на час, электрика и сантехника в Мурино. Выезд мастера. Оставьте заявку онлайн.">
+
+<meta name="keywords" content="ремонт бытовой техники Мурино, мастер на час Мурино, электрик Мурино, сантехник Мурино">
+
+<!-- =====================================================
+     ЯНДЕКС МЕТРИКА
+===================================================== -->
+
+<script type="text/javascript">
+(function(m,e,t,r,i,k,a){
+    m[i]=m[i]||function(){
+        (m[i].a=m[i].a||[]).push(arguments)
+    };
+
+    m[i].l=1*new Date();
+
+    for (var j=0;j<document.scripts.length;j++){
+        if (document.scripts[j].src === r) {
+            return;
+        }
+    }
+
+    k=e.createElement(t),
+    a=e.getElementsByTagName(t)[0];
+
+    k.async=1;
+    k.src=r;
+
+    a.parentNode.insertBefore(k,a)
+})(
+    window,
+    document,
+    'script',
+    'https://mc.yandex.ru/metrika/tag.js?id=111532341',
+    'ym'
+);
+
+ym(111532341, 'init', {
+    ssr:true,
+    webvisor:true,
+    clickmap:true,
+    ecommerce:"dataLayer",
+    referrer:document.referrer,
+    url:location.href,
+    accurateTrackBounce:true,
+    trackLinks:true
+});
+</script>
+
+<noscript>
+<div>
+<img src="https://mc.yandex.ru/watch/111532341"
+     style="position:absolute;left:-9999px;"
+     alt="">
+</div>
+</noscript>
+
+<!-- =====================================================
+     СТИЛИ
+===================================================== -->
 
 <style>
 
@@ -25,7 +83,7 @@ html {
 body {
     font-family: Arial, Helvetica, sans-serif;
     color: #172033;
-    background: #f7f9fc;
+    background: #ffffff;
     line-height: 1.5;
 }
 
@@ -39,21 +97,24 @@ a {
     margin: 0 auto;
 }
 
-/* HEADER */
+/* =====================================================
+   HEADER
+===================================================== */
 
 header {
     position: sticky;
     top: 0;
     z-index: 1000;
 
-    background: rgba(255,255,255,.94);
-    border-bottom: 1px solid #e7ebf2;
+    background: rgba(255,255,255,0.95);
+
+    border-bottom: 1px solid #e5e7eb;
 
     backdrop-filter: blur(12px);
 }
 
 .header-inner {
-    min-height: 72px;
+    min-height: 70px;
 
     display: flex;
     align-items: center;
@@ -70,53 +131,63 @@ header {
 
 .logo span {
     display: block;
+
     font-size: 12px;
     font-weight: 400;
-    color: #718096;
+
+    color: #6b7280;
 }
 
 .header-phone {
     font-weight: 700;
-    color: #2563eb;
+    color: #334155;
 }
 
 .header-button {
-    background: linear-gradient(135deg,#2563eb,#7c3aed);
+    background: linear-gradient(135deg, #2563eb, #7c3aed);
+
     color: white;
 
     padding: 12px 18px;
+
     border-radius: 12px;
 
     font-weight: 700;
 
-    box-shadow: 0 8px 22px rgba(37,99,235,.22);
+    box-shadow: 0 8px 20px rgba(37,99,235,.2);
 }
 
-/* HERO */
+/* =====================================================
+   HERO
+===================================================== */
 
 .hero {
     padding: 85px 0 75px;
 
     background:
-        radial-gradient(circle at 85% 15%, rgba(124,58,237,.16), transparent 28%),
-        radial-gradient(circle at 10% 10%, rgba(37,99,235,.14), transparent 28%),
-        linear-gradient(135deg,#f4f7ff,#ffffff);
+        radial-gradient(circle at 85% 20%, rgba(124,58,237,.13), transparent 30%),
+        radial-gradient(circle at 15% 20%, rgba(37,99,235,.12), transparent 30%),
+        linear-gradient(135deg, #f8fbff 0%, #ffffff 100%);
 }
 
 .hero-grid {
     display: grid;
-    grid-template-columns: 1.2fr .8fr;
+
+    grid-template-columns: 1.2fr 0.8fr;
+
     gap: 50px;
+
     align-items: center;
 }
 
 .badge {
     display: inline-block;
 
-    padding: 8px 13px;
+    padding: 8px 14px;
 
-    background: #e8efff;
-    color: #2856c5;
+    background: #e0ecff;
+
+    color: #1d4ed8;
 
     border-radius: 30px;
 
@@ -127,19 +198,23 @@ header {
 }
 
 .hero h1 {
-    font-size: clamp(36px,6vw,62px);
+    font-size: clamp(36px, 6vw, 62px);
+
     line-height: 1.05;
 
     margin-bottom: 24px;
+
+    color: #111827;
 }
 
 .hero h1 span {
-    color: #5b4bd8;
+    color: #2563eb;
 }
 
 .hero-text {
     font-size: 20px;
-    color: #596579;
+
+    color: #64748b;
 
     max-width: 650px;
 
@@ -148,7 +223,9 @@ header {
 
 .buttons {
     display: flex;
+
     flex-wrap: wrap;
+
     gap: 12px;
 }
 
@@ -166,44 +243,48 @@ header {
 
     font-weight: 700;
 
-    transition: transform .2s, box-shadow .2s, opacity .2s;
+    transition:
+        transform .2s,
+        box-shadow .2s,
+        opacity .2s;
 }
 
 .btn:hover {
     transform: translateY(-2px);
-    opacity: .94;
+
+    opacity: .95;
 }
 
 .btn-primary {
-    background: linear-gradient(135deg,#2563eb,#7c3aed);
+    background: linear-gradient(135deg, #2563eb, #7c3aed);
+
     color: white;
 
     box-shadow: 0 10px 25px rgba(37,99,235,.22);
 }
 
 .btn-secondary {
-    background: white;
-    color: #172033;
+    background: #eef2ff;
 
-    border: 1px solid #dce3ef;
+    color: #3730a3;
 }
-
-/* HERO CARD */
 
 .hero-card {
     background: rgba(255,255,255,.9);
 
-    border: 1px solid #e0e7f1;
+    border: 1px solid #e2e8f0;
 
     border-radius: 24px;
 
     padding: 30px;
 
-    box-shadow: 0 25px 60px rgba(31,41,55,.10);
+    box-shadow:
+        0 20px 60px rgba(30,41,59,.10);
 }
 
 .hero-card h3 {
     font-size: 23px;
+
     margin-bottom: 20px;
 }
 
@@ -212,28 +293,34 @@ header {
 }
 
 .hero-list li {
-    padding: 13px 0;
+    padding: 12px 0;
 
-    border-bottom: 1px solid #edf0f5;
+    border-bottom: 1px solid #e5e7eb;
 }
 
 .hero-list li:last-child {
     border-bottom: none;
 }
 
-/* SECTIONS */
+/* =====================================================
+   SECTIONS
+===================================================== */
 
 section {
     padding: 75px 0;
 }
 
 .section-title {
-    font-size: clamp(30px,5vw,44px);
+    font-size: clamp(30px, 5vw, 44px);
+
     margin-bottom: 14px;
+
+    color: #111827;
 }
 
 .section-subtitle {
-    color: #687386;
+    color: #64748b;
+
     font-size: 18px;
 
     max-width: 700px;
@@ -241,56 +328,72 @@ section {
     margin-bottom: 40px;
 }
 
-/* SERVICES */
+/* =====================================================
+   SERVICES
+===================================================== */
 
 .services-grid {
     display: grid;
-    grid-template-columns: repeat(3,1fr);
+
+    grid-template-columns: repeat(3, 1fr);
+
     gap: 18px;
 }
 
 .service {
     padding: 26px;
 
-    border: 1px solid #e3e8f0;
+    border: 1px solid #e2e8f0;
 
     border-radius: 18px;
 
     background: white;
 
-    transition: transform .2s, box-shadow .2s;
+    transition:
+        transform .2s,
+        box-shadow .2s,
+        border-color .2s;
 }
 
 .service:hover {
     transform: translateY(-4px);
 
-    box-shadow: 0 18px 45px rgba(31,41,55,.09);
+    border-color: #bfdbfe;
+
+    box-shadow:
+        0 15px 40px rgba(37,99,235,.10);
 }
 
 .service-icon {
     font-size: 35px;
+
     margin-bottom: 15px;
 }
 
 .service h3 {
     font-size: 21px;
+
     margin-bottom: 9px;
 }
 
 .service p {
-    color: #687386;
+    color: #64748b;
 }
 
-/* ADVANTAGES */
+/* =====================================================
+   ADVANTAGES
+===================================================== */
 
 .advantages {
     background:
-        linear-gradient(135deg,#eef4ff,#f6f0ff);
+        linear-gradient(135deg, #f8fafc, #eef4ff);
 }
 
 .advantages-grid {
     display: grid;
-    grid-template-columns: repeat(4,1fr);
+
+    grid-template-columns: repeat(4, 1fr);
+
     gap: 20px;
 }
 
@@ -301,7 +404,9 @@ section {
 
     border-radius: 18px;
 
-    border: 1px solid #e0e6f0;
+    border: 1px solid #e2e8f0;
+
+    box-shadow: 0 8px 25px rgba(15,23,42,.04);
 }
 
 .advantage strong {
@@ -313,25 +418,31 @@ section {
 }
 
 .advantage p {
-    color: #687386;
+    color: #64748b;
 }
 
-/* STEPS */
+/* =====================================================
+   HOW IT WORKS
+===================================================== */
 
 .steps {
     display: grid;
-    grid-template-columns: repeat(4,1fr);
+
+    grid-template-columns: repeat(4, 1fr);
+
     gap: 20px;
 }
 
 .step {
+    position: relative;
+
     padding: 25px;
 
-    border: 1px solid #e1e7f0;
+    border: 1px solid #e2e8f0;
 
     border-radius: 18px;
 
-    background: white;
+    background: #ffffff;
 }
 
 .step-number {
@@ -339,7 +450,7 @@ section {
 
     font-weight: 800;
 
-    color: #5b4bd8;
+    color: #2563eb;
 
     margin-bottom: 15px;
 }
@@ -349,16 +460,18 @@ section {
 }
 
 .step p {
-    color: #687386;
+    color: #64748b;
 }
 
-/* CTA */
+/* =====================================================
+   CTA
+===================================================== */
 
 .cta {
     background:
-        radial-gradient(circle at 20% 20%, rgba(37,99,235,.4), transparent 30%),
-        radial-gradient(circle at 80% 80%, rgba(124,58,237,.45), transparent 30%),
-        #111827;
+        radial-gradient(circle at 20% 20%, rgba(96,165,250,.25), transparent 30%),
+        radial-gradient(circle at 80% 80%, rgba(167,139,250,.25), transparent 30%),
+        linear-gradient(135deg, #172554, #312e81);
 
     color: white;
 
@@ -367,40 +480,54 @@ section {
     padding: 55px;
 
     text-align: center;
+
+    box-shadow: 0 20px 60px rgba(49,46,129,.18);
 }
 
 .cta h2 {
-    font-size: clamp(30px,5vw,48px);
+    font-size: clamp(30px, 5vw, 48px);
+
     margin-bottom: 15px;
 }
 
 .cta p {
-    color: #d1d5db;
+    color: #dbeafe;
+
     font-size: 18px;
+
     margin-bottom: 28px;
 }
 
 .cta .btn-primary {
     background: white;
-    color: #172033;
+
+    color: #312e81;
+
+    box-shadow: none;
 }
 
-/* CONTACTS */
+/* =====================================================
+   CONTACTS
+===================================================== */
 
 .contacts {
     display: grid;
+
     grid-template-columns: 1fr 1fr;
+
     gap: 30px;
 }
 
 .contact-card {
     padding: 30px;
 
-    border: 1px solid #e1e7f0;
+    border: 1px solid #e2e8f0;
 
     border-radius: 20px;
 
-    background: white;
+    background: #ffffff;
+
+    box-shadow: 0 10px 30px rgba(15,23,42,.05);
 }
 
 .contact-card h3 {
@@ -408,7 +535,8 @@ section {
 }
 
 .contact-card p {
-    color: #687386;
+    color: #64748b;
+
     margin-bottom: 12px;
 }
 
@@ -424,18 +552,18 @@ section {
     color: #2563eb;
 }
 
-/* FOOTER */
+/* =====================================================
+   FOOTER
+===================================================== */
 
 footer {
     padding: 35px 0;
 
-    border-top: 1px solid #e5e9f0;
+    border-top: 1px solid #e5e7eb;
 
-    color: #718096;
+    color: #64748b;
 
     font-size: 14px;
-
-    background: white;
 }
 
 .footer-inner {
@@ -448,9 +576,11 @@ footer {
     flex-wrap: wrap;
 }
 
-/* MOBILE */
+/* =====================================================
+   MOBILE
+===================================================== */
 
-@media (max-width:850px) {
+@media (max-width: 850px) {
 
     .hero-grid {
         grid-template-columns: 1fr;
@@ -477,7 +607,7 @@ footer {
     }
 }
 
-@media (max-width:600px) {
+@media (max-width: 600px) {
 
     .hero {
         padding: 55px 0;
@@ -495,6 +625,7 @@ footer {
 
     .header-button {
         padding: 10px 13px;
+
         font-size: 14px;
     }
 
@@ -508,6 +639,7 @@ footer {
 
     .cta {
         padding: 35px 20px;
+
         border-radius: 20px;
     }
 
@@ -518,90 +650,39 @@ footer {
 
 </style>
 
-<!-- ЯНДЕКС МЕТРИКА -->
-
-<script type="text/javascript">
-
-(function(m,e,t,r,i,k,a){
-
-    m[i]=m[i]||function(){
-        (m[i].a=m[i].a||[]).push(arguments)
-    };
-
-    m[i].l=1*new Date();
-
-    for(var j=0;j<document.scripts.length;j++){
-
-        if(document.scripts[j].src===r){
-            return;
-        }
-
-    }
-
-    k=e.createElement(t);
-    a=e.getElementsByTagName(t)[0];
-
-    k.async=1;
-    k.src=r;
-
-    a.parentNode.insertBefore(k,a);
-
-})(
-    window,
-    document,
-    'script',
-    'https://mc.yandex.ru/metrika/tag.js?id=111532341',
-    'ym'
-);
-
-ym(111532341,'init',{
-    ssr:true,
-    webvisor:true,
-    clickmap:true,
-    ecommerce:"dataLayer",
-    referrer:document.referrer,
-    url:location.href,
-    accurateTrackBounce:true,
-    trackLinks:true
-});
-
-</script>
-
 </head>
 
 <body>
 
-<noscript>
-<div>
-<img src="https://mc.yandex.ru/watch/111532341"
-style="position:absolute;left:-9999px;"
-alt="">
-</div>
-</noscript>
+<!-- =====================================================
+     HEADER
+===================================================== -->
 
 <header>
 
 <div class="container header-inner">
 
 <a href="#top" class="logo">
-Мастер Мурино
-<span>Ремонт и бытовые услуги</span>
+    Мастер Мурино
+    <span>Ремонт и бытовые услуги</span>
 </a>
 
 <a
-class="header-phone"
-href="tel:+79500091169"
-onclick="trackPhoneClick()">
-📞 Позвонить
+    class="header-phone"
+    href="tel:+79500091169"
+    onclick="trackPhoneClick()"
+>
+    📞 Позвонить
 </a>
 
 <a
-class="header-button telegram-link"
-href="#"
-target="_blank"
-rel="noopener"
-onclick="trackTelegramClick()">
-Оставить заявку
+    class="header-button telegram-link"
+    href="https://t.me/MasterMurinoBot"
+    target="_blank"
+    rel="noopener"
+    onclick="trackTelegramClick()"
+>
+    Оставить заявку
 </a>
 
 </div>
@@ -610,6 +691,10 @@ onclick="trackTelegramClick()">
 
 <main id="top">
 
+<!-- =====================================================
+     HERO
+===================================================== -->
+
 <section class="hero">
 
 <div class="container hero-grid">
@@ -617,36 +702,38 @@ onclick="trackTelegramClick()">
 <div>
 
 <div class="badge">
-📍 Мурино и ближайшие районы
+    📍 Мурино и ближайшие районы
 </div>
 
 <h1>
-Ремонт техники
-<span>и мастер на час</span>
+    Ремонт техники
+    <span>и мастер на час</span>
 </h1>
 
 <p class="hero-text">
-Выезд мастера в Мурино.
-Бытовая техника, электрика,
-сантехника и мелкий ремонт.
+    Выезд мастера в Мурино.
+    Бытовая техника, электрика,
+    сантехника и мелкий ремонт.
 </p>
 
 <div class="buttons">
 
 <a
-class="btn btn-primary telegram-link"
-href="#"
-target="_blank"
-rel="noopener"
-onclick="trackTelegramClick()">
-📝 Оставить заявку
+    class="btn btn-primary telegram-link"
+    href="https://t.me/MasterMurinoBot"
+    target="_blank"
+    rel="noopener"
+    onclick="trackTelegramClick()"
+>
+    📝 Оставить заявку
 </a>
 
 <a
-class="btn btn-secondary"
-href="tel:+79500091169"
-onclick="trackPhoneClick()">
-📞 Позвонить мастеру
+    class="btn btn-secondary"
+    href="tel:+79500091169"
+    onclick="trackPhoneClick()"
+>
+    📞 Позвонить мастеру
 </a>
 
 </div>
@@ -655,7 +742,9 @@ onclick="trackPhoneClick()">
 
 <div class="hero-card">
 
-<h3>Что можно заказать</h3>
+<h3>
+    Что можно заказать
+</h3>
 
 <ul class="hero-list">
 
@@ -673,77 +762,119 @@ onclick="trackPhoneClick()">
 
 </section>
 
+<!-- =====================================================
+     SERVICES
+===================================================== -->
+
 <section>
 
 <div class="container">
 
-<h2 class="section-title">Услуги</h2>
+<h2 class="section-title">
+    Услуги
+</h2>
 
 <p class="section-subtitle">
-Помогаем с бытовыми поломками и техническими
-задачами по дому. Если вашей проблемы нет
-в списке — просто опишите её в заявке.
+    Помогаем с бытовыми поломками и техническими
+    задачами по дому. Если вашей проблемы нет
+    в списке — просто опишите её в заявке.
 </p>
 
 <div class="services-grid">
 
 <div class="service">
+
 <div class="service-icon">🔧</div>
-<h3>Ремонт бытовой техники</h3>
+
+<h3>
+    Ремонт бытовой техники
+</h3>
+
 <p>
-Стиральные машины, холодильники,
-плиты, духовки, посудомоечные машины
-и другая техника.
+    Стиральные машины, холодильники,
+    плиты, духовки, посудомоечные машины
+    и другая техника.
 </p>
+
 </div>
 
 <div class="service">
+
 <div class="service-icon">🛠</div>
-<h3>Мастер на час</h3>
+
+<h3>
+    Мастер на час
+</h3>
+
 <p>
-Сборка мебели, установка полок,
-карнизов, техники и различные
-бытовые работы.
+    Сборка мебели, установка полок,
+    карнизов, техники и различные
+    бытовые работы.
 </p>
+
 </div>
 
 <div class="service">
+
 <div class="service-icon">⚡</div>
-<h3>Электрика</h3>
+
+<h3>
+    Электрика
+</h3>
+
 <p>
-Розетки, выключатели, светильники,
-подключение техники и мелкие
-электромонтажные работы.
+    Розетки, выключатели, светильники,
+    подключение техники и мелкие
+    электромонтажные работы.
 </p>
+
 </div>
 
 <div class="service">
+
 <div class="service-icon">🚰</div>
-<h3>Сантехника</h3>
+
+<h3>
+    Сантехника
+</h3>
+
 <p>
-Замена смесителей, сифонов,
-подключение техники и устранение
-небольших неисправностей.
+    Замена смесителей, сифонов,
+    подключение техники и устранение
+    небольших неисправностей.
 </p>
+
 </div>
 
 <div class="service">
+
 <div class="service-icon">🪑</div>
-<h3>Сборка и ремонт</h3>
+
+<h3>
+    Сборка и ремонт
+</h3>
+
 <p>
-Мебель, крепления, бытовые конструкции
-и различные мелкие ремонтные работы.
+    Мебель, крепления, бытовые конструкции
+    и различные мелкие ремонтные работы.
 </p>
+
 </div>
 
 <div class="service">
+
 <div class="service-icon">❓</div>
-<h3>Другая задача</h3>
+
+<h3>
+    Другая задача
+</h3>
+
 <p>
-Не нашли нужную услугу?
-Напишите, что необходимо сделать —
-обсудим задачу.
+    Не нашли нужную услугу?
+    Напишите, что необходимо сделать —
+    обсудим задачу.
 </p>
+
 </div>
 
 </div>
@@ -751,41 +882,75 @@ onclick="trackPhoneClick()">
 </div>
 
 </section>
+
+<!-- =====================================================
+     ADVANTAGES
+===================================================== -->
 
 <section class="advantages">
 
 <div class="container">
 
 <h2 class="section-title">
-Почему обращаются к нам
+    Почему обращаются к нам
 </h2>
 
 <p class="section-subtitle">
-Простая схема: описываете проблему,
-отправляете заявку — мастер связывается
-с вами и согласовывает детали.
+    Простая схема: описываете проблему,
+    отправляете заявку — мастер связывается
+    с вами и согласовывает детали.
 </p>
 
 <div class="advantages-grid">
 
 <div class="advantage">
-<strong>📍 Мурино</strong>
-<p>Работаем в Мурино и ближайших районах.</p>
+
+<strong>
+    📍 Мурино
+</strong>
+
+<p>
+    Работаем в Мурино и ближайших районах.
+</p>
+
 </div>
 
 <div class="advantage">
-<strong>📷 Фото неисправности</strong>
-<p>Можно сразу приложить фотографию или видео проблемы.</p>
+
+<strong>
+    📷 Фото неисправности
+</strong>
+
+<p>
+    Можно сразу приложить фотографию
+    или видео проблемы.
+</p>
+
 </div>
 
 <div class="advantage">
-<strong>💬 Удобная заявка</strong>
-<p>Заявка оформляется прямо в Telegram.</p>
+
+<strong>
+    💬 Удобная заявка
+</strong>
+
+<p>
+    Заявка оформляется прямо в Telegram.
+</p>
+
 </div>
 
 <div class="advantage">
-<strong>🛠 Разные работы</strong>
-<p>От ремонта техники до мелких бытовых задач.</p>
+
+<strong>
+    🛠 Разные работы
+</strong>
+
+<p>
+    От ремонта техники до мелких
+    бытовых задач.
+</p>
+
 </div>
 
 </div>
@@ -793,43 +958,91 @@ onclick="trackPhoneClick()">
 </div>
 
 </section>
+
+<!-- =====================================================
+     HOW IT WORKS
+===================================================== -->
 
 <section>
 
 <div class="container">
 
 <h2 class="section-title">
-Как всё происходит
+    Как всё происходит
 </h2>
 
 <p class="section-subtitle">
-Оставить заявку можно за несколько минут.
+    Оставить заявку можно за несколько минут.
 </p>
 
 <div class="steps">
 
 <div class="step">
-<div class="step-number">ШАГ 01</div>
-<h3>Оставляете заявку</h3>
-<p>Нажимаете кнопку и переходите в Telegram-бот.</p>
+
+<div class="step-number">
+    ШАГ 01
+</div>
+
+<h3>
+    Оставляете заявку
+</h3>
+
+<p>
+    Нажимаете кнопку и переходите
+    в Telegram-бот.
+</p>
+
 </div>
 
 <div class="step">
-<div class="step-number">ШАГ 02</div>
-<h3>Описываете проблему</h3>
-<p>Указываете услугу, проблему, адрес и телефон.</p>
+
+<div class="step-number">
+    ШАГ 02
+</div>
+
+<h3>
+    Описываете проблему
+</h3>
+
+<p>
+    Указываете услугу, проблему,
+    адрес и телефон.
+</p>
+
 </div>
 
 <div class="step">
-<div class="step-number">ШАГ 03</div>
-<h3>Прикладываете фото</h3>
-<p>При необходимости можно отправить фото или видео.</p>
+
+<div class="step-number">
+    ШАГ 03
+</div>
+
+<h3>
+    Прикладываете фото
+</h3>
+
+<p>
+    При необходимости можно отправить
+    фото или видео неисправности.
+</p>
+
 </div>
 
 <div class="step">
-<div class="step-number">ШАГ 04</div>
-<h3>Связываемся с вами</h3>
-<p>Получаем заявку и уточняем детали заказа.</p>
+
+<div class="step-number">
+    ШАГ 04
+</div>
+
+<h3>
+    Связываемся с вами
+</h3>
+
+<p>
+    Получаем заявку и уточняем
+    детали заказа.
+</p>
+
 </div>
 
 </div>
@@ -837,6 +1050,10 @@ onclick="trackPhoneClick()">
 </div>
 
 </section>
+
+<!-- =====================================================
+     CTA
+===================================================== -->
 
 <section>
 
@@ -844,20 +1061,23 @@ onclick="trackPhoneClick()">
 
 <div class="cta">
 
-<h2>Нужен мастер?</h2>
+<h2>
+    Нужен мастер?
+</h2>
 
 <p>
-Опишите проблему — можно приложить
-фото или видео.
+    Опишите проблему — можно приложить
+    фото или видео.
 </p>
 
 <a
-class="btn btn-primary telegram-link"
-href="#"
-target="_blank"
-rel="noopener"
-onclick="trackTelegramClick()">
-📝 Оставить заявку в Telegram
+    class="btn btn-primary telegram-link"
+    href="https://t.me/MasterMurinoBot"
+    target="_blank"
+    rel="noopener"
+    onclick="trackTelegramClick()"
+>
+    📝 Оставить заявку в Telegram
 </a>
 
 </div>
@@ -866,50 +1086,60 @@ onclick="trackTelegramClick()">
 
 </section>
 
+<!-- =====================================================
+     CONTACTS
+===================================================== -->
+
 <section>
 
 <div class="container">
 
 <h2 class="section-title">
-Контакты
+    Контакты
 </h2>
 
 <div class="contacts">
 
 <div class="contact-card">
 
-<h3>📱 Telegram</h3>
+<h3>
+    📱 Telegram
+</h3>
 
 <p>
-Быстрее всего оставить заявку
-через Telegram-бот.
+    Быстрее всего оставить заявку
+    через Telegram-бот.
 </p>
 
 <a
-class="btn btn-primary telegram-link"
-href="#"
-target="_blank"
-rel="noopener"
-onclick="trackTelegramClick()">
-Открыть Telegram
+    class="btn btn-primary telegram-link"
+    href="https://t.me/MasterMurinoBot"
+    target="_blank"
+    rel="noopener"
+    onclick="trackTelegramClick()"
+>
+    Открыть Telegram
 </a>
 
 </div>
 
 <div class="contact-card">
 
-<h3>📞 Телефон</h3>
+<h3>
+    📞 Телефон
+</h3>
 
 <p>
-Если удобнее обсудить задачу
-голосом — позвоните мастеру.
+    Если удобнее обсудить задачу
+    голосом — позвоните мастеру.
 </p>
 
 <a
-class="contact-phone"
-href="tel:+79500091169"
-onclick="trackPhoneClick()">
-+7 (950) 009-11-69
+    class="contact-phone"
+    href="tel:+79500091169"
+    onclick="trackPhoneClick()"
+>
+    +7 (950) 009-11-69
 </a>
 
 </div>
@@ -922,129 +1152,147 @@ onclick="trackPhoneClick()">
 
 </main>
 
+<!-- =====================================================
+     FOOTER
+===================================================== -->
+
 <footer>
 
 <div class="container footer-inner">
 
 <div>
-© 2026 Мастер Мурино
+    © 2026 Мастер Мурино
 </div>
 
 <div>
-Ремонт и бытовые услуги в Мурино
+    Ремонт и бытовые услуги в Мурино
 </div>
 
 </div>
 
 </footer>
 
+<!-- =====================================================
+     JAVASCRIPT
+===================================================== -->
+
 <script>
 
 /*
-============================================================
-UTM → TELEGRAM
-============================================================
+==========================================================
+   ПОЛУЧЕНИЕ UTM-МЕТОК
+==========================================================
 */
 
-function getUTMData() {
+function getUTM(name) {
 
-    const params = new URLSearchParams(window.location.search);
+    const params = new URLSearchParams(
+        window.location.search
+    );
 
-    return {
-        campaign: params.get("utm_campaign") || "",
-        channel: params.get("utm_medium") || "",
-        keyword: params.get("utm_term") || ""
-    };
+    return params.get(name) || "";
 }
 
 
 /*
-============================================================
-КОДИРОВАНИЕ ДАННЫХ ДЛЯ TELEGRAM
-============================================================
+==========================================================
+   КОДИРОВАНИЕ ДЛЯ TELEGRAM
+==========================================================
+
+   Передаём:
+
+   utm_campaign → c
+   utm_source   → s
+   utm_term     → k
+
+   Пример рекламной ссылки:
+
+   ?utm_campaign=holodil
+   &utm_source=cpc
+   &utm_term=remont_h
+
+==========================================================
 */
 
-function encodeTelegramPayload(data) {
+function base64UrlEncode(str) {
 
-    const json = JSON.stringify(data);
-
-    const bytes = new TextEncoder().encode(json);
-
-    let binary = "";
-
-    bytes.forEach(function(byte) {
-        binary += String.fromCharCode(byte);
-    });
-
-    return btoa(binary)
-        .replace(/\+/g, "-")
-        .replace(/\//g, "_")
-        .replace(/=/g, "");
+    return btoa(
+        unescape(
+            encodeURIComponent(str)
+        )
+    )
+    .replace(/\+/g, "-")
+    .replace(/\//g, "_")
+    .replace(/=+$/, "");
 }
 
 
-/*
-============================================================
-ФОРМИРУЕМ ССЫЛКУ НА БОТА
-============================================================
-*/
+function createTelegramLink() {
 
-function buildTelegramLink() {
+    const campaign = getUTM("utm_campaign");
+    const source = getUTM("utm_source");
+    const term = getUTM("utm_term");
 
-    const utm = getUTMData();
+    /*
+       Формируем компактную строку.
 
-    let payload = "site";
+       Например:
 
-    if (
-        utm.campaign ||
-        utm.channel ||
-        utm.keyword
-    ) {
+       c=holodil&s=cpc&k=remont_h
+    */
 
-        const encoded = encodeTelegramPayload(utm);
+    const data =
+        "c=" + campaign +
+        "&s=" + source +
+        "&k=" + term;
 
-        /*
-        Telegram допускает ограниченный размер start-параметра.
-        Для обычных UTM-меток этого достаточно.
-        */
+    const encoded = base64UrlEncode(data);
 
-        if (encoded.length <= 55) {
+    /*
+       Telegram ограничивает start-параметр.
+       Для обычных рекламных меток этого достаточно.
+    */
 
-            payload = "mm_" + encoded;
-
-        }
-
-    }
+    const payload = "utm_" + encoded;
 
     return "https://t.me/MasterMurinoBot?start=" + payload;
 }
 
 
 /*
-============================================================
-УСТАНАВЛИВАЕМ ССЫЛКИ
-============================================================
+==========================================================
+   ПОДСТАНОВКА ССЫЛКИ ВО ВСЕ TELEGRAM-КНОПКИ
+==========================================================
 */
 
-document.addEventListener("DOMContentLoaded", function() {
+document.addEventListener(
+    "DOMContentLoaded",
+    function() {
 
-    const link = buildTelegramLink();
+        const telegramLink =
+            createTelegramLink();
 
-    document
-        .querySelectorAll(".telegram-link")
-        .forEach(function(element) {
+        const links =
+            document.querySelectorAll(
+                ".telegram-link"
+            );
 
-            element.href = link;
+        links.forEach(
+            function(link) {
 
-        });
+                link.href = telegramLink;
 
-});
+            }
+        );
+
+    }
+);
 
 
 /*
-============================================================
-ЯНДЕКС МЕТРИКА — TELEGRAM
-============================================================
+==========================================================
+   ЯНДЕКС МЕТРИКА — TELEGRAM
+==========================================================
 */
 
 function trackTelegramClick() {
@@ -1063,9 +1311,9 @@ function trackTelegramClick() {
 
 
 /*
-============================================================
-ЯНДЕКС МЕТРИКА — ТЕЛЕФОН
-============================================================
+==========================================================
+   ЯНДЕКС МЕТРИКА — ТЕЛЕФОН
+==========================================================
 */
 
 function trackPhoneClick() {
